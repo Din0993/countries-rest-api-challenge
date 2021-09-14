@@ -205,6 +205,11 @@ function changeCountry() {
           btn.style.color = "#fff";
           btn.style.boxShadow = "0px 0px 13px 4px rgba(0, 0, 0, 0.35)";
         });
+        let cards = Array.from(document.querySelectorAll(".country-card"));
+        cards.forEach((card) => {
+          card.style.backgroundColor = "hsl(207, 26%, 17%)";
+          card.style.boxShadow = "0px 0px 13px 4px rgba(0, 0, 0, 0.35)";
+        });
       }
       changeCountry();
     });
@@ -219,6 +224,13 @@ searchInput.addEventListener("input", function () {
       countriesContainer.insertAdjacentHTML("beforeend", markup);
     }
   });
+  if (darkModeStatus === 1) {
+    let cards = Array.from(document.querySelectorAll(".country-card"));
+    cards.forEach((card) => {
+      card.style.backgroundColor = "hsl(207, 26%, 17%)";
+      card.style.boxShadow = "0px 0px 13px 4px rgba(0, 0, 0, 0.35)";
+    });
+  }
   let allCountries = Array.from(countriesContainer.children);
   allCountries.forEach((el) => {
     el.addEventListener("click", function () {
@@ -254,6 +266,13 @@ filterArr.forEach((el) => {
         countriesContainer.insertAdjacentHTML("beforeend", markup);
       }
     });
+    if (darkModeStatus === 1) {
+      let cards = Array.from(document.querySelectorAll(".country-card"));
+      cards.forEach((card) => {
+        card.style.backgroundColor = "hsl(207, 26%, 17%)";
+        card.style.boxShadow = "0px 0px 13px 4px rgba(0, 0, 0, 0.35)";
+      });
+    }
     let allCountries = Array.from(countriesContainer.children);
     allCountries.forEach((el) => {
       el.addEventListener("click", function () {
