@@ -1,0 +1,40 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 8rem;
+  background-color: $white;
+  margin-bottom: 4rem;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.19);
+  transition: all 0.2s;
+  @media only screen and (max-width: 47.5em) {
+    padding: 2rem 4rem;
+  }
+
+  &__darklight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 11rem;
+    cursor: pointer;
+  }
+
+  &__header {
+    font-weight: 800;
+    margin: 0;
+  }
+}
+
+.fa-moon {
+  font-size: 1.6rem;
+}
+
+.fa-sun {
+  font-size: 1.6rem;
+}
+
+.mode {
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0;
+}

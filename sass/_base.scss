@@ -1,0 +1,48 @@
+//Variables
+
+//Colors
+$darkblue: hsl(209, 23%, 22%); //(Dark Mode Elements)
+$verydarkblue: hsl(207, 26%, 17%); //(Dark Mode Background)
+$verydarkblue2: hsl(200, 15%, 8%); //(Light Mode Text)
+$darkgray: hsl(0, 0%, 52%); //(Light Mode Input)
+$verylightgray: hsl(0, 0%, 98%); //(Light Mode Background)
+$white: hsl(0, 0%, 100%); //(Dark Mode Text & Light Mode Elements)
+
+//Font
+$font-primary: "Nunito Sans", sans-serif;
+
+//Breakpoints
+$bp-mobile: 23.4375em;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.25%;
+}
+
+body {
+  font-family: $font-primary;
+  color: black;
+  font-weight: 300;
+  line-height: 1.6;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: $verylightgray;
+  overflow-x: hidden;
+  transition: all 0.2s;
+}
+
+.dark-mode {
+  color: $white;
+  background-color: $verydarkblue;
+}
