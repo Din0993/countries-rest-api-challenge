@@ -232,6 +232,14 @@ searchInput.addEventListener("input", function () {
           countriesContainer.insertAdjacentHTML("beforeend", markup);
         }
       });
+      let btns = Array.from(document.querySelectorAll(".border-countries-btn"));
+      if (darkModeStatus === 1) {
+        btns.forEach((btn) => {
+          btn.style.backgroundColor = "hsl(207, 26%, 17%)";
+          btn.style.color = "#fff";
+          btn.style.boxShadow = "0px 0px 13px 4px rgba(0, 0, 0, 0.35)";
+        });
+      }
       changeCountry();
     });
   });
